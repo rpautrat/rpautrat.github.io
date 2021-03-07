@@ -1,1 +1,218 @@
-Hello World
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Rémi Pautrat</title>
+  
+  <meta name="author" content="Rémi Pautrat">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Rémi Pautrat</name>
+              </p>
+              <p>I am a PhD student in the <a href="https://cvg.ethz.ch/">Computer Vision and Geometry (CVG)</a> group
+                 at <a href="https://ethz.ch/en.html">ETH Zurich</a> under the supervision of Marc Pollefeys.
+              </p>
+              <p>
+                Prior joining the CVG, I did my bachelor at <a href="https://www.polytechnique.edu/en/">Ecole polytechnique</a> in Paris
+                and my master in Computer Science at <a href="https://ethz.ch/en.html">ETH Zurich</a>.
+                I also worked with <a href="https://www.metralabs.com/en/">MetraLabs</a>,
+                <a href="https://www.inria.fr/en/centre-inria-nancy-grand-est">INRIA Nancy - Grand Est</a>
+                and <a href="https://leica-geosystems.com/">Leica Geosystems</a>.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:remi.pautrat@inf.ethz.ch">Email</a> &nbsp/&nbsp
+                <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://scholar.google.fr/citations?user=Td153NoAAAAJ&hl=fr">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/rpautrat/">Github</a>
+                <a href="https://www.linkedin.com/in/remi-pautrat/">LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/RemiPautrat.JPG"><img style="width:100%;max-width:100%;border-radius:50%;" alt="profile photo" src="images/RemiPautrat.JPG" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am interested in Computer Vision, Robotics and Machine Learning in general.
+                My research focuses on local feature detection and description based on deep learning,
+                with applications (among others) to visual localization and 3D reconstruction.
+                I am also quite interested in disentangling the factors of variation of an image: geometry, style, semantics, etc.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!-- LISRD -->
+          <tr onmouseout="lisrd_stop()" onmouseover="lisrd_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lisrd_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/lisrd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/lisrd.png' width="160" style="padding-top:50px">
+              </div>
+              <script type="text/javascript">
+                function lisrd_start() {
+                  document.getElementById('lisrd_image').style.opacity = "1";
+                }
+
+                function lisrd_stop() {
+                  document.getElementById('lisrd_image').style.opacity = "0";
+                }
+                lisrd_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="lisrd.html">
+                <papertitle>Online Invariance Selection for Local Feature Descriptors</papertitle>
+              </a>
+              <br>
+
+              <strong>Rémi Pautrat</strong>, 
+              <a href="http://people.inf.ethz.ch/vlarsson/">Viktor Larsson</a>,
+              <a href="http://people.inf.ethz.ch/moswald/">Martin R. Oswald</a>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <br>
+              <em>European Conference on Computer Vision (<b>ECCV</b>)</em>, 2020
+              (<span style="color:red">Oral</span>)
+              <br>
+              <a href="lisrd.html">project page</a> /
+              <a href="https://www.youtube.com/watch?v=bQT0_6YV-5s">teaser</a> /
+              <a href="https://www.youtube.com/watch?v=C2grK9w_nz0">oral</a> /
+              <a href="https://github.com/rpautrat/LISRD">code</a> /
+              <a href="https://arxiv.org/abs/2007.08988">arXiv</a>
+              <p></p>
+              <p>
+              A learned feature descriptor able to adapt its invariance to illumination and rotation at matching time.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Object Finding in Cluttered Scenes Using Interactive Perception -->
+          <tr onmouseout="interactive_perception_stop()" onmouseover="interactive_perception_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='interactive_perception_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/interactive_perception.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/interactive_perception.png' width="160" style="padding-top:30px">
+              </div>
+              <script type="text/javascript">
+                function interactive_perception_start() {
+                  document.getElementById('interactive_perception_image').style.opacity = "1";
+                }
+
+                function interactive_perception_stop() {
+                  document.getElementById('interactive_perception_image').style.opacity = "0";
+                }
+                interactive_perception_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="interactive_perception.html">
+                <papertitle>Object Finding in Cluttered Scenes Using Interactive Perception</papertitle>
+              </a>
+              <br>
+
+              <a href="https://www.researchgate.net/profile/Tonci_Novkovic">Tonci Novkovic*</a>,
+              <strong>Rémi Pautrat*</strong>, 
+              <a href="https://www.researchgate.net/profile/Fadri_Furrer">Fadri Furrer</a>,
+              <a href="https://asl.ethz.ch/the-lab/people/person-detail.MTkxNDA5.TGlzdC8yMDMwLDEyMDExMzk5Mjg=.html">Michel Breyer</a>,
+              <a href="https://asl.ethz.ch/the-lab/people/person-detail.Mjk5ODE=.TGlzdC8yMDI4LDEyMDExMzk5Mjg=.html">Roland Siegwart</a>,
+              <a href="https://www.nietojuan.com/">Juan Nieto</a>,
+              <br>
+              <em>International Conference on Robotics and Automation (<b>ICRA</b>)</em>, 2020
+              <br>
+              <a href="interactive_perception.html">project page</a> /
+              <a href="https://www.youtube.com/watch?v=Tk_K8tqlRpk">teaser</a> /
+              <a href="https://www.youtube.com/watch?v=5MJYqfBN0to">oral</a> /
+              <a href="https://arxiv.org/abs/1911.07482">arXiv</a>
+              <p></p>
+              <p>
+              We leverage reinforcement learning and computer vision to perform interactive perception:
+              a robot manipulator has to find a hidden target object in a scene by interacting with
+              its environment.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search -->
+          <tr onmouseout="mlei_stop()" onmouseover="mlei_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mlei_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mlei.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mlei.png' width="160" style="padding-top:35px">
+              </div>
+              <script type="text/javascript">
+                function mlei_start() {
+                  document.getElementById('mlei_image').style.opacity = "1";
+                }
+
+                function mlei_stop() {
+                  document.getElementById('mlei_image').style.opacity = "0";
+                }
+                mlei_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/1709.06919">
+                <papertitle>Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search</papertitle>
+              </a>
+              <br>
+
+              <strong>Rémi Pautrat</strong>, 
+              <a href="http://costashatz.github.io/">Konstantinos Chatzilygeroudis</a>,
+              <a href="https://members.loria.fr/JBMouret/">Jean-Baptiste Mouret</a>,
+              <br>
+              <em>International Conference on Robotics and Automation (<b>ICRA</b>)</em>, 2018
+              <br>
+              <a href="https://www.youtube.com/watch?v=iiVaV-U6Kqo">video</a> /
+              <a href="https://arxiv.org/abs/1709.06919">arXiv</a>
+              <p></p>
+              <p>
+              We propose a new acquisition function for Bayesian Optimization that combines the
+              likelihood of prior information with the expected improvement. We apply it to the
+              task of damage recovery in robotics and automatic adaptation to new environments.
+              </p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Template gratefully borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's personal website</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

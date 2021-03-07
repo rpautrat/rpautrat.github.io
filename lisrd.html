@@ -1,0 +1,337 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style type="text/css">
+  @font-face {
+   font-family: 'Avenir Next';
+   src: url("./fonts/Metropolis-ExtraLight.otf"); /* File to be stored at your site */
+   }
+
+  body {
+    font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  h1 {
+    font-weight:300;
+  }
+  h2 {
+    font-weight:300;
+  }
+
+  p {
+    font-weight:300;
+    line-height: 1.4;
+  }
+
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  .container{
+    width: 640px;
+    overflow:hidden;
+    display:block;
+    height: 300px;
+  }
+
+  #lisrd_video{
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+</style>
+
+
+    <title>Online Invariance Selection for Local Feature Descriptors</title>
+ </head>
+
+  <body>
+        <br>
+          <center>
+		  <span style="font-size:32px"><b>Online Invariance Selection for Local Feature Descriptors</b></span><br><br><br>
+          </center>
+          <table align="center" width="800px">
+            <tbody><tr>
+                    <td align="center" width="200px">
+              <center>
+                <span style="font-size:16px"><a href="index.html">Rémi Pautrat</a><sup>1</sup></span>
+                </center>
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                <span style="font-size:16px"><a href="http://people.inf.ethz.ch/vlarsson/">Viktor Larsson</a><sup>1</sup></span>
+                </center>
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                <span style="font-size:16px"><a href="http://people.inf.ethz.ch/moswald/">Martin R. Oswald</a><sup>1</sup></span>
+                </center>
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                <span style="font-size:16px"><a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1 2</sup></span>
+                </center>
+                </td>
+            </tr>
+
+        </tbody></table><br>
+
+          <table align="center" width="700px">
+            <tbody><tr>
+                    <td align="center" width="100px">
+              <center>
+                    <span style="font-size:16px"></span>
+                </center>
+                </td>
+                    <td align="center" width="150px">
+              <center>
+                    <span style="font-size:16px"><sup>1</sup> ETH Zurich</span>
+                </center>
+                </td>
+                    <td align="center" width="350px">
+              <center>
+                    <span style="font-size:16px"><sup>2</sup> Microsoft Mixed Reality and AI Zurich lab</span>
+                </center>
+                </td>
+                    <td align="center" width="100px">
+              <center>
+                    <span style="font-size:16px"></span>
+                </center>
+                </td>
+        </tr></tbody></table><br>
+
+        <table align="center" width="700px">
+          <tbody><tr>
+                  <td align="center" width="100px">
+            <center>
+                  <span style="font-size:16px"></span>
+              </center>
+              </td>
+                  <td align="center" width="500px">
+            <center>
+                  <span style="font-size:20px"><b>ECCV 2020 (Oral)</b></span>
+              </center>
+              </td>
+                  <td align="center" width="100px">
+            <center>
+                  <span style="font-size:16px"></span>
+              </center>
+              </td>
+      </tr></tbody></table><br>
+
+          <table align="center" width="800px">
+            <tbody><tr>
+              <br>
+              <td align="center" width="160px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    <a href="https://github.com/rpautrat/LISRD"> [Code]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="160px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    <a href="https://www.youtube.com/watch?v=bQT0_6YV-5s"> [Teaser]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="160px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    <a href="https://www.youtube.com/watch?v=C2grK9w_nz0"> [Oral]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="160px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    <a href="https://arxiv.org/abs/2007.08988"> [Paper]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="160px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    <a href="bibtex/lisrd.bib"> [Bibtex]</a>
+                  </span>
+                </center>
+              </td>
+
+            </tr></tbody>
+          </table>
+
+        <table align="center" width="800px">
+          <tbody><tr><td align="center">
+            <div class="container">
+                <video id="lisrd_video" width="640" height="360" muted autoplay loop>
+                <source src="images/lisrd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            </td></tr>
+            <tr><td align="center">
+                Our <b>Local Invariance Selection at Runtime for Descriptors (LISRD)</b> offers the possibility to leverage descriptors with different invariances (e.g. invariant or variant to rotation and/or illumination) and to perform an online selection of the most adapted invariance when matching two images.
+            </td></tr>
+          </tbody></table><br><br>
+
+      <hr>
+        <br>
+        <center>
+          <h2>
+            Abstract
+          </h2>
+        </center>
+        <br>
+        <p align="justify">
+            To be invariant, or not to be invariant: that is the question formulated in this work about local descriptors. A limitation of current feature descriptors is the trade-off between generalization and discriminative power: more invariance means less informative descriptors. We propose to overcome this limitation with a disentanglement of invariance in local descriptors and with an online selection of the most appropriate invariance given the context. Our framework consists in a joint learning of multiple local descriptors with different levels of invariance and of meta descriptors encoding the regional variations of an image. The similarity of these meta descriptors across images is used to select the right invariance when matching the local descriptors. Our approach, named Local Invariance Selection at Runtime for Descriptors (LISRD), enables descriptors to adapt to adverse changes in images, while remaining discriminative when invariance is not required. We demonstrate that our method can boost the performance of current descriptors and outperforms state-of-the-art descriptors in several matching tasks, when evaluated on challenging datasets with day-night illumination as well as viewpoint changes.
+        </p>
+      <br><br>
+
+      <hr>
+      <br>
+      <center>
+        <h2>
+          Teaser
+        </h2>
+      </center>
+      <center>
+        <embed width=100% height=100% src="https://www.youtube.com/embed/bQT0_6YV-5s">
+        </embed> 
+      </center>
+      <br><br>
+
+      <hr>
+
+      <table align="center" width="800px"><tbody>
+        <tr><td width="400px">
+          <left>
+            <!--<center>
+              <h2>
+                Acknowledgements
+              </h2>
+            </center>
+            <p> We would like to thank ... for helpful discussions.-->
+            <br> <br>
+            Website template from <a href="https://minyoungg.github.io/pix2latent/">Minyoung Huh</a> and <a href="https://richzhang.github.io/colorization/">Richard Zhang</a>.
+          </p>
+        </left>
+      </td></tr>
+    </tbody></table>
+
+    <br><br>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70157890-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-70157890-3');
+  </script>
+
+
+</body></html>

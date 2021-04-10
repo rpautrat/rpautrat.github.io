@@ -58,6 +58,55 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <!-- SOLD² -->
+          <tr onmouseout="sold2_stop()" onmouseover="sold2_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sold2_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/sold2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/sold2.png' width="160" style="padding-top:50px">
+              </div>
+              <script type="text/javascript">
+                function sold2_start() {
+                  document.getElementById('sold2_image').style.opacity = "1";
+                }
+
+                function sold2_stop() {
+                  document.getElementById('sold2_image').style.opacity = "0";
+                }
+                sold2_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="sold2.html">
+                <papertitle>SOLD²: Self-supervised Occlusion-aware Line Description and Detection</papertitle>
+              </a>
+              <br>
+
+              <strong>Rémi Pautrat*</strong>,
+              <a href="https://www.linkedin.com/in/julin31919">Juan-Ting Lin*</a>,
+              <a href="http://people.inf.ethz.ch/vlarsson/">Viktor Larsson</a>,
+              <a href="http://people.inf.ethz.ch/moswald/">Martin R. Oswald</a>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <br>
+              <em>Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2021
+              (<span style="color:red">Oral</span>)
+              <br>
+              <a href="sold2.html">project page</a> /
+              <!--<a href="">video</a> /-->
+              <a href="https://github.com/cvg/SOLD2">code</a> /
+              <a href="https://arxiv.org/abs/2104.03362">arXiv</a>
+              <p></p>
+              <p>
+              A deep line detector and descriptor able to match line segments partially occluded.
+              </p>
+            </td>
+          </tr>
+
+
           <!-- LISRD -->
           <tr onmouseout="lisrd_stop()" onmouseover="lisrd_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">

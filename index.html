@@ -101,6 +101,56 @@
           </tr>
 
 
+          <!-- LIMAP -->
+          <tr onmouseout="limap_stop()" onmouseover="limap_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='limap_gif'>
+                  <img src="images/limap.gif" width=160 style="padding-top:40px">
+                </div>
+                <div class="three" id='limap_image'>
+                <img src='images/limap.png' width="160" style="padding-top:20px">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function limap_start() {
+                  document.getElementById('limap_gif').style.opacity = "1";
+                  document.getElementById('limap_image').style.opacity = "0";
+                }
+
+                function limap_stop() {
+                  document.getElementById('limap_gif').style.opacity = "0";
+                  document.getElementById('limap_image').style.opacity = "1";
+                }
+                limap_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://b1ueber2y.me/projects/LIMAP/index.html">
+                <papertitle>3D Line Mapping Revisited</papertitle>
+              </a>
+              <br>
+
+              <a href="http://b1ueber2y.me/index.php">Shaohui Liu</a>,
+              <a href="https://www.linkedin.com/in/markyu98">Yifan Yu</a>,
+              <strong>Rémi Pautrat</strong>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <a href="https://vlarsson.github.io/">Viktor Larsson</a>,
+              <br>
+              <em>Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2023
+              (<span style="color:red">Highlight</span>)
+              <br>
+              <a href="http://b1ueber2y.me/projects/LIMAP/index.html">project page</a> /
+              <a href="https://github.com/cvg/limap">code</a> /
+              <a href="https://arxiv.org/abs/2303.17504">arXiv</a>
+              <p></p>
+              <p>
+                An open-sourced system that robustly and efficiently constructs 3D line maps from multi-view images.
+              </p>
+            </td>
+          </tr>
+
+
           <!-- DeepLSD -->
           <tr onmouseout="deeplsd_stop()" onmouseover="deeplsd_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">

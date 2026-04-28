@@ -56,6 +56,165 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <!-- CoPE-VideoLM -->
+          <tr onmouseout="cope_stop()" onmouseover="cope_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cope_video'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/cope.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <div class="three" id='cope_image'>
+                <img src='images/cope.png' width="160" style="padding-top:20px">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function cope_start() {
+                  document.getElementById('cope_video').style.opacity = "1";
+                  document.getElementById('cope_image').style.opacity = "0";
+                }
+
+                function cope_stop() {
+                  document.getElementById('cope_video').style.opacity = "0";
+                  document.getElementById('cope_image').style.opacity = "1";
+                }
+                cope_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://microsoft.github.io/CoPE/">
+                <papertitle>CoPE-VideoLM: Leveraging Codec Primitives For Efficient Video Language Modeling</papertitle>
+              </a>
+              <br>
+
+              <a href="https://sayands.github.io/">Sayan Deb Sarkar</a>,
+              <strong>Rémi Pautrat</strong>,
+              <a href="https://miksik.co.uk/">Ondrej Miksik</a>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <a href="https://ir0.github.io/">Iro Armeni</a>,
+              <a href="https://radmahdi.github.io/Home.html">Mahdi Rad</a>*,
+              <a href="https://dusmanu.com/">Mihai Dusmanu</a>*
+              <br>
+              <em>ArXiv</em>, 2026
+              <br>
+              <a href="https://microsoft.github.io/CoPE/">project page</a> /
+              <a href="https://arxiv.org/abs/2602.13191">arXiv</a>
+              <p></p>
+              <p>
+                CoPE-VideoLM leverages codec primitives to efficiently process videos for large video language models.
+              </p>
+            </td>
+          </tr>
+
+
+          <!-- LightGlueStick -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/lightgluestick.png' width="160" style="padding-top:20px">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>LightGlueStick: a Fast and Robust Glue for Joint Point-Line Matching</papertitle>
+              <br>
+
+              <a href="https://www.linkedin.com/in/aidyn-ubingazhibov-1b23a912a/">Aidyn Ubingazhibov</a>,
+              <strong>Rémi Pautrat</strong>,
+              <a href="https://iago-suarez.com/">Iago Suárez</a>,
+              <a href="http://b1ueber2y.me/index.php">Shaohui Liu</a>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <a href="https://vlarsson.github.io/">Viktor Larsson</a>,
+              <br>
+              <em>International Conference on Computer Vision (<b>ICCV</b>) workshop</em>, 2025
+              <br>
+              <a href="https://github.com/aubingazhib/LightGlueStick">code</a> /
+              <a href="https://openaccess.thecvf.com/content/ICCV2025W/CroCoDL/papers/Ubingazhibov_LightGlueStick_a_Fast_and_Robust_Glue_for_Joint_Point-Line_Matching_ICCVW_2025_paper.pdf">arXiv</a>
+              <p></p>
+              <p>
+              A fast joint point-line matcher with graph neural networks.
+              </p>
+            </td>
+          </tr>
+
+
+          <!-- MADPose -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/madpose.png' width="160" style="padding-top:20px">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Relative Pose Estimation through Affine Corrections of Monocular Depth Priors</papertitle>
+              <br>
+
+              <a href="https://www.linkedin.com/in/markyu98">Yifan Yu</a>,
+              <a href="http://b1ueber2y.me/index.php">Shaohui Liu</a>,
+              <strong>Rémi Pautrat</strong>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <a href="https://vlarsson.github.io/">Viktor Larsson</a>,
+              <br>
+              <em>Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2025
+              (<span style="color:red">Highlight</span>)
+              <br>
+              <a href="https://github.com/MarkYu98/madpose">code</a> /
+              <a href="https://arxiv.org/abs/2501.05446">arXiv</a>
+              <p></p>
+              <p>
+                New solvers for relative pose estimation leveraging monocular depth priors and affine corrections.
+              </p>
+            </td>
+          </tr>
+
+
+          <!-- LIMAP-SfM -->
+          <tr onmouseout="limap_stop()" onmouseover="limap_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='limap_gif'>
+                  <img src="images/limap.gif" width=160 style="padding-top:40px">
+                </div>
+                <div class="three" id='limap_image'>
+                <img src='images/limap.png' width="160" style="padding-top:20px">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function limap_start() {
+                  document.getElementById('limap_gif').style.opacity = "1";
+                  document.getElementById('limap_image').style.opacity = "0";
+                }
+
+                function limap_stop() {
+                  document.getElementById('limap_gif').style.opacity = "0";
+                  document.getElementById('limap_image').style.opacity = "1";
+                }
+                limap_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Robust Incremental Structure-From-Motion With Hybrid Features</papertitle>
+              <br>
+
+              <a href="http://b1ueber2y.me/index.php">Shaohui Liu</a>*,
+              <a href="https://helecomika.github.io/yidangao/">Yidan Gao</a>*,
+              <a href="https://github.com/TianyiZhang-arc">Tianyi Zhang</a>*,
+              <strong>Rémi Pautrat</strong>,
+              <a href="https://demuc.de/">Johannes Schönberger</a>,
+              <a href="https://vlarsson.github.io/">Viktor Larsson</a>,
+              <a href="http://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>,
+              <br>
+              <em>European Conference on Computer Vision (<b>ECCV</b>)</em>, 2024
+              <br>
+              <a href="https://github.com/cvg/limap">code</a> /
+              <a href="https://arxiv.org/abs/2409.19811">arXiv</a>
+              <p></p>
+              <p>
+                An open-sourced system that runs Structure-from-Motion (SfM) with points, lines, and vanishing points features.
+              </p>
+            </td>
+          </tr>
+
+
           <!-- EMAP -->
           <tr onmouseout="emap_stop()" onmouseover="emap_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
